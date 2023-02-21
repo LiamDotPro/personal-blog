@@ -2,47 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="193d5956-27e8-40fb-96bb-7a768045ec01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/bitvavo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/forhire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leadership.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/terminal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-ssr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Image.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/_ui/Button.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/_ui/Logo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/oscar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/work.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/dimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/typography.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/post.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/project.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/linkResolver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/prismic-configuration.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,17 +60,15 @@
       </list>
     </option>
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="950" />
   </component>
+  <component name="ProjectId" id="2M0zRF2PUnezNlhg7VB7aE51kII" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -98,28 +100,25 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "C:\\Users\\liam\\OneDrive\\Documents\\GitHub\\personal-blog\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liam\OneDrive\Documents\GitHub\personal-blog\public" />
+      <recent name="C:\Users\liam\OneDrive\Documents\GitHub\personal-blog" />
+    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,6 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569663646420</updated>
       <workItem from="1569663647655" duration="1310000" />
+      <workItem from="1676919279716" duration="8329000" />
     </task>
     <servers />
   </component>
@@ -171,7 +171,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
