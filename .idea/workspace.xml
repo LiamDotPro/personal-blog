@@ -2,46 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="193d5956-27e8-40fb-96bb-7a768045ec01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bitvavo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/forhire.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leadership.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/terminal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-ssr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Image.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/_ui/Button.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/_ui/Logo.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/oscar-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/work.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/colors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/typography.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/post.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/project.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/linkResolver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/prismic-configuration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569663646420</updated>
       <workItem from="1569663647655" duration="1310000" />
-      <workItem from="1676919279716" duration="8329000" />
+      <workItem from="1676919279716" duration="10543000" />
     </task>
     <servers />
   </component>

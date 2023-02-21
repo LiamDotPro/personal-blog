@@ -19,7 +19,7 @@ const Hero: FC = () => {
                             <div className="hidden sm:mb-10 sm:flex">
                                 <div
                                     className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                    I'm currently based on the lovely small island of Curacao 🇨🇼.{' '}
+                                    I&aposm currently based on the lovely small island of Curacao 🇨🇼.{' '}
                                     <a href="https://www.google.com/maps/place/Cura%C3%A7ao/data=!4m2!3m1!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723?sa=X&ved=2ahUKEwi9pNqu56T9AhVJi7AFHW1mCjMQ8gF6BAgIEAI" className="whitespace-nowrap font-semibold text-indigo-600">
                                         <span className="absolute inset-0" aria-hidden="true"/>
                                         Google Maps<span aria-hidden="true">&rarr;</span>
@@ -30,7 +30,7 @@ const Hero: FC = () => {
                                 Technical lead, Fullstack developer and Interim Technical recruiter.
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
-                                I have more than 10 years experience leading and building products for small to medium size businesses and startups. I've built product teams, been a mentor, installed devops/project management, recruited ambitious developers and got Sh*T done.
+                                I have more than 10 years experience leading and building products for small to medium size businesses and startups. I&aposve built product teams, been a mentor, installed devops/project management, recruited ambitious developers and got Sh*T done.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
                                 <a
@@ -40,7 +40,7 @@ const Hero: FC = () => {
                                     My Services
                                 </a>
                                 <a href="#" className="text-base font-semibold leading-7 text-gray-900">
-                                    Why I'm a good fit <span aria-hidden="true">→</span>
+                                    Why I&aposm a good fit <span aria-hidden="true">→</span>
                                 </a>
                             </div>
                         </div>

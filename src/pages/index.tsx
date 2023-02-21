@@ -5,8 +5,6 @@ import styles from '@/styles/Home.module.css'
 import Hero from "@/components/Hero/Hero";
 import Services from "@/components/Services/Services";
 
-const inter = Inter({subsets: ['latin']})
-
 export default function Home() {
     return (
         <>
