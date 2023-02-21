@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="193d5956-27e8-40fb-96bb-7a768045ec01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "C:\\Users\\liam\\OneDrive\\Documents\\GitHub\\personal-blog\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -92,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569663646420</updated>
       <workItem from="1569663647655" duration="1310000" />
-      <workItem from="1676919279716" duration="11050000" />
+      <workItem from="1676919279716" duration="13116000" />
     </task>
     <servers />
   </component>
