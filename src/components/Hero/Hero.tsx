@@ -34,8 +34,8 @@ const Hero: FC = () => {
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
                                 I have more than 10 years experience leading and building products for small to medium
-                                size businesses and startups. I&apos;ve built product teams, been a mentor, installed
-                                devops/project management, recruited ambitious developers and got Sh*T done.
+                                size businesses and startups. I&apos;ve created product teams, been a mentor, installed
+                                devops/project management and recruited ambitious developers.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
                                 <a

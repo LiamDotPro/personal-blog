@@ -12,7 +12,8 @@ const features = [
         imageSrc: BitvavoImage,
         imageAlt: 'Bitvavo Homepage example site',
         imagePosition: 'top',
-        callToActionText: 'Learn More'
+        callToActionText: 'Learn More',
+        scrollToStr: 'frontendRef'
     },
     {
         name: 'Backend Development',
@@ -21,16 +22,18 @@ const features = [
         imageSrc: TerminalImage,
         imageAlt: 'Double stitched black canvas hook loop.',
         imagePosition: 'center',
-        callToActionText: 'Learn More'
+        callToActionText: 'Learn More',
+        scrollToStr: 'backendRef'
     },
     {
         name: 'Technical Leadership',
         description:
-            `A product team is only as good as it's leadership, with me leading one of your teams you can be sure that your project is being managed by a steady hand. I can help to create, strategize and deliver on the key details of your project and optimise the growth of personnel withing your organization.`,
+            `A product team is only as good as it's leadership, with me leading one of your teams you can be sure that your project is being managed by a steady hand. I can help to create, strategize and deliver on the key details of your project and optimise the growth of personnel within your organization.`,
         imageSrc: Leadership,
         imageAlt: 'Black canvas body with chrome zipper and key ring.',
         imagePosition: 'center',
-        callToActionText: 'Learn More'
+        callToActionText: 'Learn More',
+        scrollToStr: 'technicalLeadershipRef'
     },
     {
         name: 'Interim Technical recruitment',
@@ -39,11 +42,14 @@ const features = [
         imageSrc: ForHire,
         imageAlt: 'Black canvas body with chrome zipper and key ring.',
         imagePosition: 'center',
-        callToActionText: 'Learn More'
+        callToActionText: 'Learn More',
+        scrollToStr: 'interimTechnicalRecuitmentRef'
     },
 ]
 
-const Services: FC = () => {
+const Services: FC<{
+    scrollFunc: (refAsString: string) => void
+}> = ({scrollFunc}) => {
     return (
         <div className="bg-gray-100">
             <div className="mx-auto max-w-7xl py-24 sm:py-32 sm:px-2 lg:px-4">
@@ -52,7 +58,8 @@ const Services: FC = () => {
                         <h2 className="font-semibold text-gray-500">Overview</h2>
                         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Services</p>
                         <p className="mt-4 text-gray-500">
-                            Figuring out how a contractor will work inside your business can at times be difficult, here&apos;s a comprehensive list of the services of which I can deliver on.
+                            Figuring out how a contractor will work inside your business can at times be difficult,
+                            here&apos;s a comprehensive list of the services of which I can deliver on.
                         </p>
                     </div>
 
@@ -68,6 +75,7 @@ const Services: FC = () => {
                                     <button
                                         type="button"
                                         className="mt-6 inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                        onClick={() => scrollFunc(feature.scrollToStr)}
                                     >
                                         {feature.callToActionText}
                                     </button>
@@ -75,7 +83,7 @@ const Services: FC = () => {
                                 <div className="flex-auto lg:col-span-6 xl:col-span-8">
                                     <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
                                         <Image src={feature.imageSrc} alt={feature.imageAlt}
-                                             className={`object-cover object-${feature.imagePosition}`}/>
+                                               className={`object-cover object-${feature.imagePosition}`}/>
                                     </div>
                                 </div>
                             </div>
