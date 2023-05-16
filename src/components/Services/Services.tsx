@@ -8,8 +8,7 @@ import Image from 'next/image'
 const features = [
     {
         name: 'Frontend Development',
-        description:
-            `I have a wealth of experience building the user interfaces for a variety of different applications primarily with React/Vue and Typescript. I&aposm well versed in creating pixel perfect responsive code that make&aposs your product shine. No matter if you use redux or prefer something like RxJS I can help you mold a great user experience.`,
+        description: `I have a wealth of experience building the user interfaces for a variety of different applications primarily with React/Vue and Typescript. I'm well versed in creating pixel perfect responsive code that make's your product shine. No matter if you use redux or prefer something like RxJS I can help you mold a great user experience.`,
         imageSrc: BitvavoImage,
         imageAlt: 'Bitvavo Homepage example site',
         imagePosition: 'top',
@@ -18,7 +17,7 @@ const features = [
     {
         name: 'Backend Development',
         description:
-            `I have lots of experience developing backend services in NodeJS with typescript alongside Apollo tooling or classical rest api services. I&aposve already helped lots of companies to integrate payment solutions and deploy there applications into the cloud while being more efficient, performant and often at better cost. `,
+            `I have lots of experience developing backend services in NodeJS with typescript alongside Apollo tooling or classical rest api services. I've already helped lots of companies to integrate payment solutions and deploy there applications into the cloud while being more efficient, performant and often at better cost. `,
         imageSrc: TerminalImage,
         imageAlt: 'Double stitched black canvas hook loop.',
         imagePosition: 'center',
@@ -36,7 +35,7 @@ const features = [
     {
         name: 'Interim Technical recruitment',
         description:
-            `As an interim technical recruiter for your company or team you can outsource all of the effort required in interviewing and ensuring that possible candidates are high quality and match the profile your looking for. Don&apost waste valuable developer time when you can use someone with a proven track record of hiring the best talent.`,
+            `As an interim technical recruiter for your company or team you can outsource all of the effort required in interviewing and ensuring that possible candidates are high quality and match the profile your looking for. Don't waste valuable developer time when you can use someone with a proven track record of hiring the best talent.`,
         imageSrc: ForHire,
         imageAlt: 'Black canvas body with chrome zipper and key ring.',
         imagePosition: 'center',
@@ -53,7 +52,7 @@ const Services: FC = () => {
                         <h2 className="font-semibold text-gray-500">Overview</h2>
                         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Services</p>
                         <p className="mt-4 text-gray-500">
-                            Figuring out how a contractor will work inside your business can at times be difficult, here&aposs a comprehensive list of the services of which I can deliver on.
+                            Figuring out how a contractor will work inside your business can at times be difficult, here&apos;s a comprehensive list of the services of which I can deliver on.
                         </p>
                     </div>
 

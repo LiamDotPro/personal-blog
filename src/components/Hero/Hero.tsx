@@ -1,4 +1,6 @@
-import React, {FC, useState} from "react";
+import React, {FC} from "react";
+import Image from "next/image";
+import MyImage from '../../../public/me-min.jpg'
 
 const Hero: FC = () => {
     return (
@@ -19,8 +21,9 @@ const Hero: FC = () => {
                             <div className="hidden sm:mb-10 sm:flex">
                                 <div
                                     className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                                    I&aposm currently based on the lovely small island of Curacao 🇨🇼.{' '}
-                                    <a href="https://www.google.com/maps/place/Cura%C3%A7ao/data=!4m2!3m1!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723?sa=X&ved=2ahUKEwi9pNqu56T9AhVJi7AFHW1mCjMQ8gF6BAgIEAI" className="whitespace-nowrap font-semibold text-indigo-600">
+                                    I&apos;m currently based on the lovely small island of Curacao 🇨🇼
+                                    <a href="https://www.google.com/maps/place/Cura%C3%A7ao/data=!4m2!3m1!1s0x8e849dbe62c7fdc7:0xfc7f9228dbc64723?sa=X&ved=2ahUKEwi9pNqu56T9AhVJi7AFHW1mCjMQ8gF6BAgIEAI"
+                                       className="ml-1 whitespace-nowrap font-semibold text-indigo-600">
                                         <span className="absolute inset-0" aria-hidden="true"/>
                                         Google Maps<span aria-hidden="true">&rarr;</span>
                                     </a>
@@ -30,7 +33,9 @@ const Hero: FC = () => {
                                 Technical lead, Fullstack developer and Interim Technical recruiter.
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
-                                I have more than 10 years experience leading and building products for small to medium size businesses and startups. I&aposve built product teams, been a mentor, installed devops/project management, recruited ambitious developers and got Sh*T done.
+                                I have more than 10 years experience leading and building products for small to medium
+                                size businesses and startups. I&apos;ve built product teams, been a mentor, installed
+                                devops/project management, recruited ambitious developers and got Sh*T done.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
                                 <a
@@ -40,7 +45,7 @@ const Hero: FC = () => {
                                     My Services
                                 </a>
                                 <a href="#" className="text-base font-semibold leading-7 text-gray-900">
-                                    Why I&aposm a good fit <span aria-hidden="true">→</span>
+                                    Why I&apos;m a good fit <span aria-hidden="true">→</span>
                                 </a>
                             </div>
                         </div>
@@ -48,11 +53,9 @@ const Hero: FC = () => {
                 </div>
             </div>
             <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img
-                    className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
-                    alt=""
-                />
+                <Image src={MyImage} alt={"A photo of Liam Read"}
+                       className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"/>
+
             </div>
         </div>
     )
