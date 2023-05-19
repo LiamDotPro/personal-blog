@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import {Inter} from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Hero from "@/components/Hero/Hero";
 import Services from "@/components/Services/Services";
@@ -9,13 +7,17 @@ import FrontendDevelopment from '@/components/FrontendSection/FrontendDevelopmen
 import BackendDevelopment from '@/components/BackendSection/BackendDevelopment';
 import TechnicalLeadership from '@/components/TechnicaLeadershipSection/TechnicalLeadership';
 import InterimTechnicalRecuitment from '@/components/InterimTechnicalRecuitment/InterimTechnicalRecuitment';
-
+import ContactForm from '@/components/ContactForm/ContactForm';
+import GoodFit from '@/components/GoodFit/GoodFit';
 export default function Home() {
 
     const frontendRef: RefObject<HTMLDivElement> = useRef(null);
     const backendRef: RefObject<HTMLDivElement> = useRef(null);
     const technicalLeadershipRef: RefObject<HTMLDivElement> = useRef(null);
     const interimTechnicalRecuitmentRef: RefObject<HTMLDivElement> = useRef(null);
+    const contactFormRef: RefObject<HTMLDivElement> = useRef(null);
+    const servicesRef: RefObject<HTMLDivElement> = useRef(null);
+    const goodFitRef: RefObject<HTMLDivElement> = useRef(null);
 
     const scrollTowardsUsingRef = (refAsString: string) => {
         if (refAsString === "frontendRef") {
@@ -27,6 +29,12 @@ export default function Home() {
             if (technicalLeadershipRef.current) technicalLeadershipRef.current.scrollIntoView({behavior: "smooth"});
         } else if (refAsString === "interimTechnicalRecuitmentRef") {
             if (interimTechnicalRecuitmentRef.current) interimTechnicalRecuitmentRef.current.scrollIntoView({behavior: "smooth"});
+        } else if (refAsString === "contactFormRef") {
+            if (contactFormRef.current) contactFormRef.current.scrollIntoView({behavior: "smooth"});
+        } else if (refAsString === "servicesRef") {
+            if (servicesRef.current) servicesRef.current.scrollIntoView({behavior: "smooth"});
+        } else if (refAsString === "goodFitRef") {
+            if (goodFitRef.current) goodFitRef.current.scrollIntoView({behavior: "smooth"});
         }
 
     }
@@ -42,12 +50,14 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main className={styles.main}>
-                <Hero/>
-                <Services scrollFunc={scrollTowardsUsingRef}/>
+                <Hero scrollFunc={scrollTowardsUsingRef}/>
+                <div ref={servicesRef}><Services scrollFunc={scrollTowardsUsingRef}/></div>
                 <div ref={frontendRef}><FrontendDevelopment/></div>
                 <div ref={backendRef}><BackendDevelopment/></div>
                 <div ref={technicalLeadershipRef}><TechnicalLeadership/></div>
                 <div ref={interimTechnicalRecuitmentRef}><InterimTechnicalRecuitment/></div>
+                <div ref={goodFitRef}><GoodFit scrollFunc={scrollTowardsUsingRef}/></div>
+                <div ref={contactFormRef}><ContactForm/></div>
             </main>
         </>
     )

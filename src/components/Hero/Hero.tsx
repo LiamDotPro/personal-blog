@@ -2,7 +2,9 @@ import React, {FC} from "react";
 import Image from "next/image";
 import MyImage from '../../../public/me-min.jpg'
 
-const Hero: FC = () => {
+const Hero: FC<{
+    scrollFunc: (refAsString: string) => void
+}> = ({scrollFunc}) => {
     return (
         <div className="relative bg-white">
             <div className="mx-auto max-w-7xl">
@@ -38,14 +40,14 @@ const Hero: FC = () => {
                                 devops/project management and recruited ambitious developers.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
-                                <a
-                                    href="#"
+                                <button
+                                    onClick={() => scrollFunc('servicesRef')}
                                     className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
                                     My Services
-                                </a>
+                                </button>
                                 <a href="#" className="text-base font-semibold leading-7 text-gray-900">
-                                    Why I&apos;m a good fit <span aria-hidden="true">→</span>
+                                    FAQs <span aria-hidden="true">→</span>
                                 </a>
                             </div>
                         </div>

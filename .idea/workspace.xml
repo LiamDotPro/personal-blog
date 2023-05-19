@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="193d5956-27e8-40fb-96bb-7a768045ec01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bitvavo-desktop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/interim-deskotp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/laptop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leadership-main.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BackendSection/BackendDevelopment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FrontendSection/FrontendDevelopment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/InterimTechnicalRecuitment/InterimTechnicalRecuitment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TechnicaLeadershipSection/TechnicalLeadership.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ContactForm/ContactForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GoodFit/GoodFit.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/sendMail.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,26 +79,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/home/liamr/Documents/github/personal-blog/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/home/liamr/Documents/github/personal-blog/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/liamr/Documents/github/personal-blog/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/liamr/Documents/github/personal-blog/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -125,7 +122,12 @@
       <workItem from="1569663647655" duration="1310000" />
       <workItem from="1676919279716" duration="13116000" />
       <workItem from="1684249375498" duration="1311000" />
-      <workItem from="1684250696473" duration="6892000" />
+      <workItem from="1684250696473" duration="13094000" />
+      <workItem from="1684355226155" duration="2858000" />
+      <workItem from="1684396610852" duration="337000" />
+      <workItem from="1684416175059" duration="612000" />
+      <workItem from="1684481248168" duration="676000" />
+      <workItem from="1684481994152" duration="3554000" />
     </task>
     <servers />
   </component>
