@@ -2,6 +2,9 @@
   "name": "liam-read-cv",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
