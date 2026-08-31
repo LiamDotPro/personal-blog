@@ -1,7 +1,5 @@
 import type { Config } from 'tailwindcss'
 
-// all in fixtures is set to tailwind v3 as interims solutions
-
 const config: Config = {
   darkMode: ['class'],
   content: [
@@ -12,7 +10,31 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
+      },
       colors: {
+        // Design palette — warm paper, from the Claude Design source.
+        paper: '#F4F2ED',
+        surface: '#FCFBF8',
+        raised: '#FFFFFF',
+        sunken: '#EFEBE3',
+        line: {
+          DEFAULT: '#DBD6CD',
+          strong: '#C6C0B6',
+        },
+        ink: {
+          DEFAULT: '#1C1A17',
+          muted: '#55504A',
+          faint: '#8B857C',
+        },
+        rust: '#C8442B',
+        blue: '#2F5BD0',
+        amber: '#A8730F',
+
+        // shadcn/ui tokens, retained for the component library in components/ui.
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -71,20 +93,12 @@ const config: Config = {
       },
       keyframes: {
         'accordion-down': {
-          from: {
-            height: '0',
-          },
-          to: {
-            height: 'var(--radix-accordion-content-height)',
-          },
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
-          from: {
-            height: 'var(--radix-accordion-content-height)',
-          },
-          to: {
-            height: '0',
-          },
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
         },
       },
       animation: {
