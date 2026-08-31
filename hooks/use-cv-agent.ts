@@ -15,6 +15,7 @@ import {
   VizKind,
   VoiceState,
   lookup,
+  nearest,
 } from "@/lib/cv-data"
 
 export type ChatMessage = {
@@ -72,7 +73,19 @@ export function useCvAgent() {
   const miniBarsRef = useRef<(HTMLSpanElement | null)[]>([])
   const endRef = useRef<HTMLDivElement | null>(null)
   /** The run the Stop button would skip. */
-  const pending = useRef<{ mid: number; entry: KbEntry } | null>(null)
+  const pending = useRef<{ mid: number; entry: KbEntry; follow: string[] } | null>(null)
+  /** Questions already asked this session, so they stop being suggested. */
+  const asked = useRef<Set<string>>(new Set())
+
+  /**
+   * Drop anything already asked. If that empties the list, widen to the
+   * openers rather than showing no suggestions at all.
+   */
+  const freshSuggestions = useCallback((candidates: string[]) => {
+    const fresh = candidates.filter((q) => !asked.current.has(q.toLowerCase()))
+    if (fresh.length > 0) return fresh
+    return OPENING_SUGGESTIONS.filter((q) => !asked.current.has(q.toLowerCase()))
+  }, [])
 
   const clearTimer = useCallback((key: TimerKey) => {
     const t = timers.current[key]
@@ -143,7 +156,7 @@ export function useCvAgent() {
   }, [])
 
   const streamAnswer = useCallback(
-    (mid: number, entry: KbEntry) => {
+    (mid: number, entry: KbEntry, follow: string[]) => {
       const full = entry.text
       const started = Date.now()
       const total = Math.min(STREAM_MAX_MS, (full.length / STREAM_CPS) * 1000)
@@ -152,7 +165,7 @@ export function useCvAgent() {
         clearTimer("stream")
         clearTimer("safety")
         setVoice("idle")
-        setSuggestions(entry.follow)
+        setSuggestions(freshSuggestions(follow))
         setMessages((prev) => prev.map((m) => (m.id === mid ? { ...m, text: full, streaming: false } : m)))
       }
 
@@ -172,19 +185,19 @@ export function useCvAgent() {
         setMessages((prev) => prev.map((m) => (m.id === mid ? { ...m, text: chunk } : m)))
       }, 110) as unknown as ReturnType<typeof setTimeout>
     },
-    [clearTimer],
+    [clearTimer, freshSuggestions],
   )
 
   const runSteps = useCallback(
-    (mid: number, entry: KbEntry, i: number) => {
+    (mid: number, entry: KbEntry, i: number, follow: string[]) => {
       clearTimer("tick")
       clearTimer("stepT")
-      pending.current = { mid, entry }
+      pending.current = { mid, entry, follow }
 
       if (i >= entry.steps.length) {
         patch(mid, { running: false, stepIndex: entry.steps.length })
         setVoice("speaking")
-        streamAnswer(mid, entry)
+        streamAnswer(mid, entry, follow)
         return
       }
 
@@ -199,7 +212,7 @@ export function useCvAgent() {
 
       timers.current.stepT = setTimeout(() => {
         clearTimer("tick")
-        runSteps(mid, entry, i + 1)
+        runSteps(mid, entry, i + 1, follow)
       }, duration)
     },
     [clearTimer, patch, streamAnswer],
@@ -207,12 +220,12 @@ export function useCvAgent() {
 
   const skipRun = useCallback(() => {
     if (!pending.current) return
-    const { mid, entry } = pending.current
+    const { mid, entry, follow } = pending.current
     clearTimer("tick")
     clearTimer("stepT")
     patch(mid, { running: false, stepIndex: entry.steps.length })
     setVoice("speaking")
-    streamAnswer(mid, entry)
+    streamAnswer(mid, entry, follow)
   }, [clearTimer, patch, streamAnswer])
 
   const ask = useCallback(
@@ -221,7 +234,15 @@ export function useCvAgent() {
       animateBars(false)
 
       const entry = lookup(question)
+      // Nothing matched, so offer the closest entries rather than a fixed list.
+      const follow = entry.id === "fallback" ? nearest(question) : entry.follow
       const id = Date.now()
+
+      asked.current.add(question.toLowerCase())
+      // Make the answer shareable: liam.pro/?q=why+hire+him
+      if (typeof window !== "undefined") {
+        window.history.replaceState(null, "", `?q=${encodeURIComponent(question)}`)
+      }
 
       setVoice("thinking")
       setDraft("")
@@ -252,7 +273,7 @@ export function useCvAgent() {
             streaming: true,
           },
         ])
-        runSteps(mid, entry, 0)
+        runSteps(mid, entry, 0, follow)
       }, THINK_MS)
     },
     [animateBars, runSteps, stopAll],
@@ -313,6 +334,7 @@ export function useCvAgent() {
   const reset = useCallback(() => {
     stopAll()
     animateBars(false)
+    asked.current.clear()
     setMessages([])
     setVoice("idle")
     setDraft("")
@@ -320,6 +342,7 @@ export function useCvAgent() {
     setSuggestions(OPENING_SUGGESTIONS)
     setOpenReceipt(null)
     setOpenRow(null)
+    window.history.replaceState(null, "", window.location.pathname)
     window.scrollTo({ top: 0, behavior: "smooth" })
   }, [animateBars, stopAll])
 
@@ -345,6 +368,12 @@ export function useCvAgent() {
   useEffect(() => {
     if (!CV_CONFIG.intro) return
 
+    // Arriving on a shared ?q= link means going straight to the answer.
+    if (new URLSearchParams(window.location.search).get("q")) {
+      setBooting(false)
+      return
+    }
+
     // A full-screen hold is exactly what reduced-motion users opt out of.
     if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
       setBooting(false)
@@ -362,6 +391,16 @@ export function useCvAgent() {
 
     timers.current.bootEnd = setTimeout(() => setBooting(false), BOOT_END_MS)
   }, [clearTimer])
+
+  // Answer a shared ?q= link once, on first mount.
+  const deepLinked = useRef(false)
+  useEffect(() => {
+    if (deepLinked.current) return
+    deepLinked.current = true
+    // Capped: the value is rendered as a message, and the link is public.
+    const q = new URLSearchParams(window.location.search).get("q")?.trim().slice(0, 200)
+    if (q) ask(q)
+  }, [ask])
 
   // Tear every timer down on unmount.
   useEffect(() => {
